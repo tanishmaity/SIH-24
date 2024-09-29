@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India's Unseen Soul</title>
+    <link rel="stylesheet" href="handmade-items.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="new-web.html">Home</a></li>
+                    <li><a href="seekers-choice.html">Seeker's Choice</a></li>
+                    <li><a href="introduceplace.html">Introduce Place</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <!-- "Hey [your name]" button -->
+                <li><a href="#" id="userGreeting">Hey, Guest</a></li>
+                <script>// Retrieve the logged-in user's name from localStorage
+                    const loggedInUser = localStorage.getItem('loggedInUser');
+            
+                    // If the user is logged in, show their name in the navbar
+                    if (loggedInUser) {
+                        document.getElementById('userGreeting').textContent = `Hey, ${loggedInUser}`;
+                    } else {
+                        document.getElementById('userGreeting').textContent = 'Hey, Guest';
+                    }
+                </script>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>INDIA'S UNSEEN SOUL</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Jamshedpur" />
+                <button><class="search-icon">search</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="places">
+        <div class="menu">
+            <form action="new-web.html">
+                <button type="places"> Places</button>
+            </form>
+            <form action="food.html">
+                <button type="foods"> Foods</button>
+            </form>
+            <form action="handmade-items.html">
+                <button class="active">Handmade items</button>
+            </form>
+            <form action="thingstodo.html">
+                <button type="things-to-do"> Things to Do...</button>
+            </form>
+            
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="dhokra.png" alt="Dimna Lake">
+                <div class="card-content">
+                    <h3>Dhokra Art</h3>
+                    <a href="dhokraart.html">
+                    <button class="explore">Explore  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25"
+                        height="19" viewBox="0 0 50 50">
+                        <path
+                            d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                        </path>
+                    </svg> </button></a>
+                    <span class="rating">★★★★☆</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="cane-and-bamboo-art.png" alt="Dalma Wildlife Sanctuary">
+                <div class="card-content">
+                    <h3>Cane & Bamboo Craft</h3>
+                    <a href="bambooart.html">
+                    <button class="explore">Explore  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25"
+                        height="19" viewBox="0 0 50 50">
+                        <path
+                            d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                        </path>
+                    </svg> </button></a>
+                    <span class="rating">★★★☆☆</span>
+                </div>
+            </div>
+
+            
+
+
+
+        </div>
+    </section>
+</body>
+
+</html>

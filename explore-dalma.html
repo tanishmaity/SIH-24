@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalma Wildlife Sanctuary</title>
+    <link rel="stylesheet" href="explore-dalma.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="RS Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="active" href="new-web.html">Home</a></li>
+                <li><a href="seekers-choice.html">Seeker's Choice</a></li>
+                <li><a href="introduceplace.html">Introduce Place</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <!-- "Hey [your name]" button -->
+                <li><a href="#" id="userGreeting">Hey, Guest</a></li>
+                <script>// Retrieve the logged-in user's name from localStorage
+                    const loggedInUser = localStorage.getItem('loggedInUser');
+            
+                    // If the user is logged in, show their name in the navbar
+                    if (loggedInUser) {
+                        document.getElementById('userGreeting').textContent = `Hey, ${loggedInUser}`;
+                    } else {
+                        document.getElementById('userGreeting').textContent = 'Hey, Guest';
+                    }
+                </script>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <h1>Dalma Wildlife Sanctuary</h1>
+        <section class="hero">
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <img src="dalma1.jpeg" alt="Dalma Image 1">
+                </div>
+                <div class="slides fade">
+                    <img src="dalma2.jpeg" alt="Dalma Image 2">
+                </div>
+        </section>
+        <p>Dalma Wildlife Sanctuary is a wildlife sanctuary located 10 km from the city of Jamshedpur in the state of
+            Jharkhand. Inaugurated in 1975, it contains a significant population of Indian Elephants.Dalma Wildlife
+            Sanctuary is situated around the Dalma Hills. Dalma Wildlife Sanctuary is a
+            much larger area starting from Chandil to 40 km east. The sanctuary covers around 195 km2.
+            It is about 100 km from the capital city Ranchi, and 15 km from the steel city Jamshedpur.
+            The wildlife sanctuary runs parallel to the NH-18 with hills as high as 915 m from sea level.
+            Dalma Sanctuary is spread over 193 km2 of forests of East Singhbhum and Saraikela-kharsawan
+            districts of the state of Jharkhand. The forests of Dalma come under the category"Dry peninsular Sal"
+            and "Northern Dry Mixed Deciduous Forest". Most part of Dalma forestsshed leaves in the summer and
+            attains its full bloom at the onset of monsoon.</p>
+
+            <span class="heading">Seekers Review</span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <p>★★★★☆3.9 out of 5 stars</p>
+            <hr style="border:3px solid #f1f1f1">
+            
+            <div class="row">
+              <div class="side">
+                <div>5 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-5"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>150</div>
+              </div>
+              <div class="side">
+                <div>4 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-4"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>63</div>
+              </div>
+              <div class="side">
+                <div>3 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-3"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>15</div>
+              </div>
+              <div class="side">
+                <div>2 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-2"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>6</div>
+              </div>
+              <div class="side">
+                <div>1 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-1"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>20</div>
+              </div>
+            </div>
+    </section>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+    </script>
+
+</body>
+
+</html>

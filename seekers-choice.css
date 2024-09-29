@@ -1,0 +1,160 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+/* Navbar */
+.navbar {
+   
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #a0522d;  /* Add brown line under the navbar */
+}
+
+.navbar a:is(:link, :active, :visited).active{
+    color:#ae5105c8;
+    background: transparent;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #010000;
+    font-size: 20px;
+    padding: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar ul li a:hover {
+    color: #f4a261;
+}
+
+/*logo */
+.logo img {
+    width: 50px;  /* Adjust this value as needed */
+    height: auto;  /* Maintains aspect ratio */
+}
+
+.hero-section {
+    display: flex;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.trending-container {
+    width: 200px;
+}
+
+.trending-container h2 {
+    background-color: #e36803;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.category-list li {
+    margin-bottom: 10px;
+}
+
+
+.category-list li a {
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+    color:#8b4409;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.category-list li a.active {
+    background-color: #8b4409f8;
+    color: white;
+}
+
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-left: 40px;
+}
+
+.place-card {
+    width: 380px;
+    height: 270px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card img {
+    width: 100%;
+    height: 160px; /* Adjust this as per your image size */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Animation for image zoom */
+}
+
+
+.place-card h3 {
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.explore-btn {
+    background-color: #da933d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.number-badge {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #5d4037;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-btn:hover {
+    background-color: #5d4037;
+    transition: 0.3s;
+}

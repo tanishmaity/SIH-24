@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo Art</title>
+    <link rel="stylesheet" href="uraddal.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="RS Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="active" href="new-web.html">Home</a></li>
+                <li><a href="seekers-choice.html">Seeker's Choice</a></li>
+                <li><a href="introduceplace.html">Introduce Place</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <!-- "Hey [your name]" button -->
+                <li><a href="#" id="userGreeting">Hey, Guest</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content"></section>
+    <h1>Bangla Sahib Gurudwara</h1>
+    <section class="hero">
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="bamboo1.jpeg" alt="bamboo1 1" class="responsive">
+            </div>
+            <div class="slides fade">
+                <img src="bamboo2.jpeg" alt="bamboo 2" class="responsive">
+            </div>
+    </section>
+    <p>Bangla Sahib Gurudwara is trending due to its powerful combination of spiritual significance, historical heritage, community service, and serene beauty. Visiting the gurudwara offers not only a spiritual and cultural experience but also an opportunity to participate in a centuries-old tradition of selfless service. Whether for a peaceful retreat, cultural exploration, or the chance to serve, Bangla Sahib is an essential stop for anyone visiting New Delhi.
+
+    </p>
+    <p>The Cane and Bamboo Craft in Jamshedpur is not just a form of artistic expression but also holds great 
+        cultural significance for the tribal communities. Bamboo and cane have long been a part of daily life 
+        in these communities, used for constructing homes, making tools, and creating functional items for
+         everyday use. The craftsmanship is often tied to their traditions, with particular designs and 
+         techniques representing specific cultural symbols.</p>
+    <p>Seekers Review</p>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <p>★★★★☆3.9 out of 5 stars</p>
+    <hr style="border:3px solid #f1f1f1">
+
+    <div class="row">
+        <div class="side">
+            <div>5 star</div>
+        </div>
+        <div class="middle">
+            <div class="bar-container">
+                <div class="bar-5"></div>
+            </div>
+        </div>
+        <div class="side right">
+            <div>150</div>
+        </div>
+        <div class="side">
+            <div>4 star</div>
+        </div>
+        <div class="middle">
+            <div class="bar-container">
+                <div class="bar-4"></div>
+            </div>
+        </div>
+        <div class="side right">
+            <div>63</div>
+        </div>
+        <div class="side">
+            <div>3 star</div>
+        </div>
+        <div class="middle">
+            <div class="bar-container">
+                <div class="bar-3"></div>
+            </div>
+        </div>
+        <div class="side right">
+            <div>15</div>
+        </div>
+        <div class="side">
+            <div>2 star</div>
+        </div>
+        <div class="middle">
+            <div class="bar-container">
+                <div class="bar-2"></div>
+            </div>
+        </div>
+        <div class="side right">
+            <div>6</div>
+        </div>
+        <div class="side">
+            <div>1 star</div>
+        </div>
+        <div class="middle">
+            <div class="bar-container">
+                <div class="bar-1"></div>
+            </div>
+        </div>
+        <div class="side right">
+            <div>20</div>
+        </div>
+    </div>
+    </section>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+    </script>
+    <script>// Retrieve the logged-in user's name from localStorage
+        const loggedInUser = localStorage.getItem('loggedInUser');
+
+        // If the user is logged in, show their name in the navbar
+        if (loggedInUser) {
+            document.getElementById('userGreeting').textContent = `Hey, ${loggedInUser}`;
+        } else {
+            document.getElementById('userGreeting').textContent = 'Hey, Guest';
+        }
+    </script>
+</body>
+
+</html>

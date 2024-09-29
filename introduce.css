@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+}  
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #a0522d;  /* Add brown line under the navbar */
+}
+
+.navbar a:is(:link, :active, :visited).active{
+    color:#ae5105c8;
+    background: transparent;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #010000;
+    font-size: 20px;
+    padding: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar ul li a:hover {
+    color: #f4a261;
+}
+/*logo */
+.logo img {
+    width: 50px;  /* Adjust this value as needed */
+    height: auto;  /* Maintains aspect ratio */
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #a0522d;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(255, 111, 0);;
+}
+
+.profile {
+    margin: 20px;
+    padding: 20px;
+    border: 10px black;
+    text-align:left;
+}
+
+.profile img {
+    width: 100px; 
+    /* adjust the size as needed */
+}
+
+.user-info h2 {
+    margin: 10px 0;
+    color: #333;
+    display: inline;
+}
+
+.user-info p {
+    color: gray;
+    display: block;
+}
+
+textarea {
+    width: 95%;
+    height: 350px;
+    margin-top: 10px;
+}
+
+.submit-btn, .upload-btn {
+    background-color: #ffcc00;
+    border: none;
+    margin-left: 90%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.upload {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.upload p {
+    margin-top: 10px;
+}
+
+.upload-container {
+    background-color: #eb8511cb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.upload-container h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+.upload-container input[type="file"] {
+    display: block;
+    margin: 20px auto;
+}
+.upload-container img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+    border: 0px solid #cccccc;
+    border-radius: 10px;
+    max-height: 300px;
+}
+.upload-container button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -10px;
+}
+.upload-container button:hover {
+    background-color: white;
+}
+
+h3{
+    text-align: center;
+}

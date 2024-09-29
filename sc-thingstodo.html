@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India's Unseen Soul</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sc-food.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="new-web.html">Home</a></li>
+                    <li><a class="active" href="seekers-choice.html">Seeker's Choice</a></li>
+                    <li><a href="introduceplace.html">Introduce Place</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <!-- "Hey [your name]" button -->
+                <li><a href="#" id="userGreeting">Hey, Guest</a></li>
+                <script>// Retrieve the logged-in user's name from localStorage
+                    const loggedInUser = localStorage.getItem('loggedInUser');
+            
+                    // If the user is logged in, show their name in the navbar
+                    if (loggedInUser) {
+                        document.getElementById('userGreeting').textContent = `Hey, ${loggedInUser}`;
+                    } else {
+                        document.getElementById('userGreeting').textContent = 'Hey, Guest';
+                    }
+                </script>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="trending-container">
+            <h2>TRENDING</h2>
+            <ul class="category-list">
+                <li><a href="seekers-choice.html">Places</a></li>
+                <li><a href="sc-food.html">Foods</a></li>
+                <li><a href="sc-handmade-items.html">Handmade Items</a></li>
+                <li><a href="#" class="active">Things to do...</a></li>
+            </ul>
+        </div>
+        <div class="cards">
+            <div class="place-card">
+                <span class="number-badge">1</span>
+                <img src="Ziro Music Festival.jpeg" alt="Bangla Sahib Gurudwara">
+                <h3>Ziro Music Festival </h3>
+                <button class="explore-btn">Explore</button>
+                <span class="rating">★★★★☆</span>
+            </div>
+            <div class="place-card">
+                <span class="number-badge">2</span>
+                <img src="Uttarayan.jpeg" alt="Munnar">
+                <h3>Uttarayan</h3>
+                <button class="explore-btn">Explore</button>
+                <span class="rating">★★★★☆</span>
+            </div>
+            <div class="place-card">
+                <span class="number-badge">3</span>
+                <img src="Kila Raipur festival.jpeg" alt="Guna Caves">
+                <h3>Kila Raipur festival</h3>
+                <button class="explore-btn">Explore</button>
+                <span class="rating">★★★★☆</span>
+            </div>
+            <div class="place-card">
+                <span class="number-badge">4</span>
+                <img src="Floating Post Offfice.jpeg" alt="Dhuandhar Falls">
+                <h3>Floating Post Offfice</h3>
+                <button class="explore-btn">Explore</button>
+                <span class="rating">★★★★☆</span>
+            </div>
+            <div class="place-card">
+                <span class="number-badge">5</span>
+                <img src="Baha Parab.jpeg" alt="Lingaraj Temple">
+                <h3>Baha Parab</h3>
+                <button class="explore-btn">Explore</button>
+                <span class="rating">★★★★☆</span>
+            </div>
+            <div class="place-card">
+                <span class="number-badge">6</span>
+                <img src="Sangareddy jail Mudeum.jpeg" alt="Mehrangarh Fort">
+                <h3>Sangareddy jail Mudeum</h3>
+                <button class="explore-btn">Explore</button>
+                <span class="rating">★★★★☆</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

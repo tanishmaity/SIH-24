@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(#f6f6f6 50%, #895d24 100%);
+    background-size: cover; /* Ensures the gradient covers the whole background */
+}
+
+
+
+        /* Center the login container */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .login-box {
+            position: relative;
+            background-color: #d48b3e;
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+            text-align: center;
+            box-shadow: 0px 0px 15px 5px rgba(212, 139, 62, 0.6);
+        }
+
+        /* RS Logo inside the login box */
+        .login-box .rs-logo {
+            position: absolute;
+
+        }
+
+        .login-box .rs-logo img {
+            height: 60px;
+            width: 60px;
+        }
+
+        .login-box h1 {
+            color: white;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            outline: none;
+        }
+
+        /* Rounded login button */
+        .login-box input[type="submit"] {
+            background-color: #ffffff;
+            color: black;
+            padding: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: larger;
+            width: 100px;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .login-box input[type="submit"]:hover {
+            background-color: #ffffff;
+        }
+
+        /* Link colors */
+        .login-box .links {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .login-box .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Social Login Buttons Side by Side */
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        /* Rounded social buttons */
+        .social-login button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .social-login button img {
+            margin-right: 10px;
+            height: 20px;
+        }
+
+        .social-login button.google {
+            background-color: #ffffff;
+            color: #000;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: medium;
+        }
+
+
+
+        .social-login button.facebook {
+            background-color: #ffffff;
+            color: #000;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: medium;
+        }

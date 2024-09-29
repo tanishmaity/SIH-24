@@ -1,0 +1,177 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffffff 60%, #f3ccaa 60%);
+    background-size: cover;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #a0522d;
+    /* Add brown line under the navbar */
+}
+
+.navbar a:is(:link, :active, :visited).active {
+    color: #ae5105c8;
+    background: transparent;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #f4a261;
+}
+
+/*logo */
+.logo img {
+    width: 50px;
+    /* Adjust this value as needed */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+/* Styling for the hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    
+    /* white top, light brown bottom */
+    text-align: center;
+    position: relative;
+}
+
+.hero p {
+    font-size: 25px;
+    margin-left: 11%;
+    margin-top: 10%;
+    justify-content:space-evenly;
+}
+
+/* Styling for the headline text */
+.hero h1 {
+    font-family: 'Chewy', cursive;
+    /* Using Chewy font for the playful, handwritten effect */
+    font-size: 55px;
+    /* Adjust font size to fit the image */
+    color: #282323;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Slight shadow for emphasis */
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* Center the text */
+}
+
+/* Optional padding for the image in the hero section */
+.image-placeholder img {
+    width: 100%;
+    margin-top: 70%;
+    height: auto;
+}
+
+/* About section */
+
+
+/* Footer section */
+footer {
+    position: relative;
+    padding: 50px;
+}
+
+/* Social media section */
+.social-media {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f6a224;
+    padding: 5px;
+    border: 2px, solid black;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.social-media h3 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    padding: 10px 0;
+    border-bottom: 1px solid black; /* Black separation line between items */
+}
+
+.social-media li:last-child {
+    border-bottom: none; /* Remove the line after the last item */
+}
+
+.social-media ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.social-media ul li a {
+    display: flex;
+    justify-content: space-between;
+    /* Makes icon align to the right */
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    width: 150px;
+    /* Adjust this to ensure icons are on the right */
+}
+
+.social-media ul li img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.social-media ul li a:hover {
+    color: #ff6600;
+}
+
+.social-media ul li a:hover img {
+    filter: brightness(1.2);
+    /* Makes the icon brighter on hover */
+}

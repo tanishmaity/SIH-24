@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Seekers Website</title>
+    <link rel="stylesheet" href="opinion.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="RS Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="active" href="new-web.html">Home</a></li>
+                <li><a href="seekers-choice.html">Seeker's Choice</a></li>
+                <li><a href="introduceplace.html">Introduce Place</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <!-- "Hey [your name]" button -->
+                <li><a href="#" id="userGreeting">Hey, Guest</a></li>
+            </ul>
+        </nav>
+    </header
+    <!-- Header -->
+    <div class="header">
+        <h1>Post your Opinion</h1>
+        <input type="text" placeholder="Write your opinion here..." />
+        <button>Submit</button>
+    </div>
+
+    <!-- Seekers Opinions -->
+    <div class="opinions-container">
+        <h2>Seekers Opinions</h2>
+
+        <div class="opinion">
+            <div class="profile">
+                <!-- Placeholder for profile image -->
+                <img src="https://via.placeholder.com/60" alt="Profile Image">
+            </div>
+            <div class="opinion-details">
+                <h3>Sameer Sharma <small>Dt: 23-04-2017</small></h3>
+                <p>Great information. Very helpful.</p>
+            </div>
+        </div>
+
+        <div class="opinion">
+            <div class="profile">
+                <img src="https://via.placeholder.com/60" alt="Profile Image">
+            </div>
+            <div class="opinion-details">
+                <h3>Rohan Shaw <small>Dt: 09-01-2017</small></h3>
+                <p>Bohot acchii jagha thi. Maza aa gaya !!</p>
+            </div>
+        </div>
+
+        <div class="opinion">
+            <div class="profile">
+                <img src="https://via.placeholder.com/60" alt="Profile Image">
+            </div>
+            <div class="opinion-details">
+                <h3>Rajat Yadav <small>Dt: 12-10-2016</small></h3>
+                <p>Loved the place. Amazing experience.</p>
+            </div>
+        </div>
+
+        <!-- You can add more opinions here -->
+    </div>
+
+    <script>
+        // Handle the form submission for posting opinions
+        const button = document.querySelector('button');
+        const input = document.querySelector('input');
+        const opinionsContainer = document.querySelector('.opinions-container');
+    
+        button.addEventListener('click', function() {
+            const opinionText = input.value;
+            
+            if(opinionText) {
+                const opinionDiv = document.createElement('div');
+                opinionDiv.classList.add('opinion');
+                opinionDiv.innerHTML = `
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/60" alt="Profile Image">
+                    </div>
+                    <div class="opinion-details">
+                        <h3>Anonymous <small>Dt: ${new Date().toLocaleDateString()}</small></h3>
+                        <p>${opinionText}</p>
+                    </div>
+                `;
+                opinionsContainer.appendChild(opinionDiv);
+                input.value = ''; // Clear input after posting
+            } else {
+                alert('Please write an opinion before submitting!');
+            }
+        });
+    </script>
+    
+    <script>// Retrieve the logged-in user's name from localStorage
+        const loggedInUser = localStorage.getItem('loggedInUser');
+
+        // If the user is logged in, show their name in the navbar
+        if (loggedInUser) {
+            document.getElementById('userGreeting').textContent = `Hey, ${loggedInUser}`;
+        } else {
+            document.getElementById('userGreeting').textContent = 'Hey, Guest';
+        }
+    </script>
+</body>
+</html>

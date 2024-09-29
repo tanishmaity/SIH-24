@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #a0522d;
+    /* Add brown line under the navbar */
+}
+
+header a:is(:link, :active, :visited).active {
+    color: #ae5105c8;
+    background: transparent;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+   
+}
+
+.header h1 {
+    color: #e88f1b;
+}
+
+.header input {
+    padding: 10px;
+    width: 60%;
+    border-radius: 25px;
+    border: 2px solid #e88f1b;
+    font-size: 18px;
+}
+
+.header button {
+    padding: 10px 20px;
+    background-color: #e88f1b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Opinions Section */
+.opinions-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.opinions-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.opinion {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.opinion:last-child {
+    border-bottom: none;
+}
+
+.profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.opinion-details {
+    flex-grow: 1;
+}
+
+.opinion-details h3 {
+    margin: 0;
+    color: #e88f1b;
+    font-size: 16px;
+}
+
+.opinion-details small {
+    color: #666;
+}
+
+.opinion-details p {
+    color: #333;
+    font-size: 16px;
+}
